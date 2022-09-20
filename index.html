@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <script src="util.js"></script>
+    <script src="sudoku.js" defer></script>
+    <script src="script.js" defer></script>
+    <style id="cssstyle"></style>
+</head>
+
+<body>
+    <div class="container gameContainer">
+        <div class="top">
+            <span>top</span>
+        </div>
+        <div class="game">
+            <div class="gameTop">
+                <div class="topSide">
+                    <span class="side" data-y="0"></span>
+                    <span class="side" data-y="1"></span>
+                    <span class="side" data-y="2"></span>
+                    <span class="side" data-y="3"></span>
+                    <span class="side" data-y="4"></span>
+                    <span class="side" data-y="5"></span>
+                    <span class="side" data-y="6"></span>
+                    <span class="side" data-y="7"></span>
+                    <span class="side" data-y="8"></span>
+                </div>
+            </div>
+            <div class="gameBottom">
+                <div class="leftSide">
+                    <span class="side" data-x="0"></span>
+                    <span class="side" data-x="1"></span>
+                    <span class="side" data-x="2"></span>
+                    <span class="side" data-x="3"></span>
+                    <span class="side" data-x="4"></span>
+                    <span class="side" data-x="5"></span>
+                    <span class="side" data-x="6"></span>
+                    <span class="side" data-x="7"></span>
+                    <span class="side" data-x="8"></span>
+                </div>
+                <div class="board">
+                    <div class="block" data-bi="0"></div>
+                    <div class="block" data-bi="1"></div>
+                    <div class="block" data-bi="2"></div>
+                    <div class="block" data-bi="3"></div>
+                    <div class="block" data-bi="4"></div>
+                    <div class="block" data-bi="5"></div>
+                    <div class="block" data-bi="6"></div>
+                    <div class="block" data-bi="7"></div>
+                    <div class="block" data-bi="8"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button id="new">new</button>
+            <button id="css">css</button>
+        </div>
+    </div>
+    <div class="container cssContainer">
+        <textarea id="code">// body { background-color: red; }</textarea>
+    </div>
+</body>
+
+</html>
